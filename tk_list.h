@@ -55,7 +55,7 @@ extern int tk_list_push_back(tk_node_t *list, void* data);
 * @brief Delete the node at the end of the list.
 * @param list A ptr to the head node.
 */
-extern void tk_list_pop_back(tk_node_t *list);
+extern int tk_list_pop_back(tk_node_t *list);
 
 /**
 * @brief Return the node at the end of the list.

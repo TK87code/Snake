@@ -74,8 +74,10 @@ int tk_list_push_back(tk_node_t *list, void* data)
     return 0;
 }
 
-void tk_list_pop_back(tk_node_t *list)
+int tk_list_pop_back(tk_node_t *list)
 {
+    if (list->next == NULL) return 1;
+    
     tk_node_t *current;
     
     current = list;
@@ -83,9 +85,12 @@ void tk_list_pop_back(tk_node_t *list)
         current = current->next;
     }
     
+    
     free(current->next->data);
     free(current->next);
     current->next = NULL;
+    
+    return 0;
 }
 
 tk_node_t* tk_list_get_back(tk_node_t *list)
