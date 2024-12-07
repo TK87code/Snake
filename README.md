@@ -3,9 +3,9 @@ Simple snake game written in C. This is made for my educational purpose and to t
 ## Gameplay
 https://github.com/user-attachments/assets/3a8565ef-510b-4ad6-9a8f-2593a53bee48
 ## Requirement
-Windows 10　　
-MSVC　　
-Raylib　　
+Windows 10<br>
+MSVC<br>
+Raylib<br>　
 https://github.com/raysan5/raylib/tree/master
 ## Usage
 Arrow keys to move s snake.
